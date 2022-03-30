@@ -20,6 +20,7 @@ The set of DEGs will be compared with the prior signatures of both G1 and G0 gro
 For each PMS, a structural equation model (SEM) will be generated to represent the covariance network among PMS genes. The covariance structure will be perturbed by an exogenous source, represented by the group variable G = {0, 1} (for instance, group A = 0 and group C = 1). This multivariate linear network will be critical for two key cancer-related features:
 1.	the causal influence of the phenotype over the observed transcriptional deregulation;
 2.	the paths of (in)direct perturbation propagation among DEGs.
+
 The former will further assess the PMS, leading to the final cancer-associated signature, and the latter will determine the causal structure (mechanism) underlying malignant transformation. SEM building, fitting, cancer signature and mechanism extraction will be done with the R package SEMgraph [3]. This package will also control high-dimensionality, parallelization settings, and fitting heuristics for large-scale genomic models. Possible deviations from normality will be controlled through non-paranormal transformation, through the R package huge [4].
 
 
